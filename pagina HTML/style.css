@@ -1,0 +1,326 @@
+*{
+    margin: auto;
+    padding:0;
+    font-family: 'Opem Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+   
+}
+
+ul li a{
+    text-decoration: none;
+    align-items: center;
+}
+div img{ /*essa div com essas configurações ajuda na responsividade do site*/
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+}
+
+.flex-container{
+    display: flex;
+    max-width: 1200px; /*a distribuição dos items no tamanho maximo do container*/
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+ 
+    
+}
+
+header{
+    background-color:#00427C;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    
+    
+
+}
+
+header .list-items{
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+          
+}
+
+.list-items li a{
+    color: #fff;
+   
+
+}
+
+header .menu{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apresentacao{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao .texto-apresentacao{
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.texto-apresentacao h1{
+    color:#00427C;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn{/*botão dos links*/
+    background-color:#00427C;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px; /*deixa a borda arredondada*/
+    width: 220px;/*aumenta a altura do preenchimento*/
+    display: block; /*serve para fazer com que as alterações funcionem dentro do local*/
+    text-decoration: none; /*tira a linha debaixo do link*/
+    height: 50px; /*aumenta a altura do preenchimento*/
+    line-height: 50px; /*deixa o texto alinhado dentro do preenchimento*/
+    margin-top: 10px; /*altera a distancia de espaço de cima */
+    margin-bottom: 10px;/*altera a distancia de espaço de baixo */
+
+}
+
+#quem-somos{
+  flex-direction: row-reverse; /*altera a posição de lado da div. nesse caso não foi necessário*/
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#quem-somos h2{
+    font-size: 32px;
+    color: #00427C;
+    display: flex; 
+    margin-bottom: 20px;   
+    margin-left: 20px;
+}
+
+#quem-somos h2::before{
+    content: ""; /*apresenta a barra lateral do quem somos */
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color:#00427C;
+    position: relative;
+
+}
+
+#quem-somos p{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#quem-somos img{ /*melhora a distribuição das partes dentro da div*/
+    min-width: 420px;
+}
+
+.container-externo{
+   background-color:#00427C;
+    width: 100%;/*deixa o container 100% na cor azul*/
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;/*padding serve para alinhar e diferenciar os items que estão dentro do texto*/
+    padding-bottom: 100px;
+    
+    
+
+}
+
+#servicos h2{ /*altera as configurações do nome servicos em h2*/
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 50px;
+   
+}
+
+
+.list-servicos{
+   display: flex; /*organiza os desenhos um do lado do outro, mantem flex diction como row(linha)*/
+   justify-content: space-between; /*organiza os desenhos ocupando melhor os espaços um do lado do outro*/
+}
+
+.list-servicos .item-servico{
+    text-align:center;
+}
+
+.item-servico a{
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;/* afasta o intem do outro na parte superior*/
+    padding: 5px 10px; /*aumenta o tamanho do fundo do texto do link*/
+    color:#00427C;
+    font-size: 12px;
+    text-decoration: none;/*tira a linha de baixo do link*/
+    font: weight 700;
+    
+}
+
+.item-servico p{ /*altera os titulos dos items dos serviços*/
+    font-weight: 700 ;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px
+}
+
+.item-servico img{ /*altera as configurações das imagems dos serviços*/
+    width: 60%;
+    margin: auto;
+}
+
+#planos{ /*altera o id:planos*/
+    flex-direction: column;
+    min-height: 70vh; /*altera a altura mínima do container planos*/
+    padding-top: 50px;
+}
+
+#planos h2{
+    font-size: 32px;
+}
+
+.list-planos{
+    display: flex;
+    align-items: flex-end; /*alinha os items dos planos por baixo*/
+    justify-content: space-between;
+ 
+}
+.item-plano{
+    flex: 1;
+    border: 5px solid#00427C;
+    margin-right: 20px;
+    padding: 10px;/*altera as distancias das laterais dos items*/
+    max-width: 250px;
+    
+    
+}
+
+.item-plano .btn{
+    margin: auto;
+    margin-bottom: 20px; /*alinha a margin de baixo*/
+    
+
+}
+
+.item-plano h3{ /*altera os nomes dos h3*/
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.item-plano h3::after{/*adiciona um pseudo elemento(a barra embaixo do nome plano*/
+    content: "";
+    background-color:#00427C;
+    width: 100%;
+    height: 3px; /*tamanho da altura da barra*/
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.item-plano ul{ /*configura os nomes dentro dos planos*/
+    padding: 10px 20px; /*altera as distancias das laterais dos items*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+  
+
+}
+
+.item-plano ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color:#00427C;
+    margin-right: 5px;
+}
+
+footer{
+    background-color:#00427C;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: #fff;
+}
+
+/*modile*/
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao{
+        min-height: 200px;
+    }
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos{
+        min-width: 320px;
+        margin: auto;
+
+    }
+    .list-servicos{
+        flex-direction: column;
+    }
+
+    .item-servico img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
